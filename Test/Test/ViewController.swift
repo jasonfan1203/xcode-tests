@@ -30,5 +30,9 @@ class ViewController: UIViewController {
         bg2.hidden = false
     }
     
+    //this a comment to test git
+    
+    var test = 20
+    
 }
 
