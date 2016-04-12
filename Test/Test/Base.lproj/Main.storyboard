@@ -17,31 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-04-2IJ">
-                                <rect key="frame" x="-332" y="-12" width="1078" height="759"/>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="umF-dH-O7Q">
-                                <rect key="frame" x="-102" y="-19" width="656" height="802"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlU-ti-mF4">
-                                <rect key="frame" x="125" y="353" width="166" height="30"/>
-                                <state key="normal" title="CHANGE THE PIC, BRO!">
-                                    <color key="titleColor" red="1" green="0.4635069241" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jla-Aw-Tuh">
+                                <rect key="frame" x="195" y="40" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="red-P7-YPP">
+                                <rect key="frame" x="195" y="216" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yf-1Q-512">
+                                <rect key="frame" x="158" y="86" width="98" height="30"/>
+                                <state key="normal" title="Next Question"/>
                                 <connections>
-                                    <action selector="changeBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oE4-6r-z0B"/>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XkG-H5-72o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opb-iV-tVk">
+                                <rect key="frame" x="161" y="262" width="93" height="30"/>
+                                <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBu-sz-xt5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="red-P7-YPP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5OO-Eq-RLY"/>
+                            <constraint firstItem="red-P7-YPP" firstAttribute="top" secondItem="1yf-1Q-512" secondAttribute="bottom" constant="100" id="9Ju-UY-wVc"/>
+                            <constraint firstItem="Opb-iV-tVk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FJN-uL-P0j"/>
+                            <constraint firstItem="1yf-1Q-512" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HyY-Dl-A1B"/>
+                            <constraint firstItem="jla-Aw-Tuh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="KOG-hB-dTG"/>
+                            <constraint firstItem="1yf-1Q-512" firstAttribute="top" secondItem="jla-Aw-Tuh" secondAttribute="bottom" constant="25" id="MEn-ck-ZT7"/>
+                            <constraint firstItem="jla-Aw-Tuh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lM9-sm-Mqa"/>
+                            <constraint firstItem="Opb-iV-tVk" firstAttribute="top" secondItem="red-P7-YPP" secondAttribute="bottom" constant="25" id="s8E-ea-bMd"/>
+                        </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="bg1" destination="zPR-04-2IJ" id="txi-3j-7XH"/>
-                        <outlet property="bg2" destination="umF-dH-O7Q" id="ihy-TR-3s4"/>
-                        <outlet property="button" destination="SlU-ti-mF4" id="Mf9-cZ-2UE"/>
+                        <outlet property="answerLabel" destination="red-P7-YPP" id="UaR-qw-Umt"/>
+                        <outlet property="questionLabel" destination="jla-Aw-Tuh" id="JQ1-hc-04d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -49,8 +69,4 @@
             <point key="canvasLocation" x="325" y="363"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="1" width="2049" height="3643"/>
-        <image name="2" width="480" height="854"/>
-    </resources>
 </document>
