@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cool-iphone-6-space-background" translatesAutoresizingMaskIntoConstraints="NO" id="VNs-Yb-1SD" userLabel="bg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tube-Fuck-You-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="rG4-0O-EBl" userLabel="fuckLogo">
+                                <rect key="frame" x="100" y="30" width="400" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="LeY-ku-57C"/>
+                                    <constraint firstAttribute="width" constant="400" id="RmU-h2-34D"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hy-Y8-MQd" userLabel="goButton">
+                                <rect key="frame" x="200" y="370" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="KbV-el-vVC"/>
+                                    <constraint firstAttribute="width" constant="200" id="yhL-A0-jfL"/>
+                                </constraints>
+                                <state key="normal" image="2011-05-29-warm-words"/>
+                                <connections>
+                                    <action selector="onPlayButtonPresses:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bmR-tO-Hs8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fuck me?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oac-Km-u49" userLabel="textField">
+                                <rect key="frame" x="200" y="310" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8dz-DZ-0GP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="NaH-Gj-iZi"/>
+                                    <constraint firstAttribute="width" constant="200" id="a9H-Bu-CBx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RA-o2-WzF" userLabel="tapButton">
+                                <rect key="frame" x="200" y="90" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ka2-3O-XiD"/>
+                                    <constraint firstAttribute="height" constant="200" id="cEI-uN-HEw"/>
+                                </constraints>
+                                <state key="normal" image="Gold_Badge_Template_Clipart_Image"/>
+                                <connections>
+                                    <action selector="onTapButtonPresses:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JaR-Bm-Xge"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 FUCKS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsb-ez-er9" userLabel="tapLabel">
+                                <rect key="frame" x="165" y="350" width="270" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="Js5-Uz-Gkb"/>
+                                    <constraint firstAttribute="width" constant="270" id="SPf-1O-EUE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FUCK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGp-hJ-bmn" userLabel="finale">
+                                <rect key="frame" x="172" y="256" width="257" height="137"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TR-fZ-PhF" userLabel="restart">
+                                <rect key="frame" x="258" y="387" width="84" height="30"/>
+                                <state key="normal" title="fuck again...">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9dh-qX-lJE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Hy-Y8-MQd" firstAttribute="top" secondItem="oac-Km-u49" secondAttribute="bottom" constant="30" id="1zN-DP-Ksg"/>
+                            <constraint firstItem="2Hy-Y8-MQd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4vH-BX-PJ4"/>
+                            <constraint firstItem="tsb-ez-er9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6os-3h-mPz"/>
+                            <constraint firstItem="0TR-fZ-PhF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7sy-Kh-B4d"/>
+                            <constraint firstItem="kGp-hJ-bmn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8qK-VH-sCn"/>
+                            <constraint firstItem="VNs-Yb-1SD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9Dg-h5-ZlW"/>
+                            <constraint firstItem="VNs-Yb-1SD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ghq-jb-bbG"/>
+                            <constraint firstItem="3RA-o2-WzF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="Nke-4i-jSt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Hy-Y8-MQd" secondAttribute="bottom" constant="30" id="TmM-MC-93c"/>
+                            <constraint firstItem="0TR-fZ-PhF" firstAttribute="top" secondItem="oac-Km-u49" secondAttribute="bottom" constant="47" id="WnU-e0-ipt"/>
+                            <constraint firstItem="3RA-o2-WzF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="erC-qX-Brf"/>
+                            <constraint firstItem="kGp-hJ-bmn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fYW-vt-daK"/>
+                            <constraint firstItem="rG4-0O-EBl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="fc6-sS-4k2"/>
+                            <constraint firstItem="tsb-ez-er9" firstAttribute="top" secondItem="oac-Km-u49" secondAttribute="bottom" constant="10" id="hAY-La-bpL"/>
+                            <constraint firstItem="rG4-0O-EBl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l4d-cZ-9xM"/>
+                            <constraint firstAttribute="trailing" secondItem="VNs-Yb-1SD" secondAttribute="trailing" id="p3r-2T-6Fi"/>
+                            <constraint firstItem="oac-Km-u49" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="plx-Fe-57E"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VNs-Yb-1SD" secondAttribute="bottom" id="uK2-qa-V0n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="finale" destination="kGp-hJ-bmn" id="eP8-14-bGx"/>
+                        <outlet property="logo" destination="rG4-0O-EBl" id="HHS-Tc-fid"/>
+                        <outlet property="play" destination="2Hy-Y8-MQd" id="quC-M1-yZU"/>
+                        <outlet property="restart" destination="0TR-fZ-PhF" id="geZ-de-O2j"/>
+                        <outlet property="showTaps" destination="tsb-ez-er9" id="6BX-wy-Fdb"/>
+                        <outlet property="tap" destination="3RA-o2-WzF" id="0U2-xy-xWq"/>
+                        <outlet property="textField" destination="oac-Km-u49" id="mHq-fF-REW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2011-05-29-warm-words" width="200" height="200"/>
+        <image name="Gold_Badge_Template_Clipart_Image" width="504" height="600"/>
+        <image name="Tube-Fuck-You-Logo" width="178" height="178"/>
+        <image name="cool-iphone-6-space-background" width="744" height="1392"/>
+    </resources>
+</document>
